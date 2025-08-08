@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Cropping Tool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/react-image-crop/dist/ReactCrop.css" />
+    <style>
+        body {
+            background-color: #111827; /* Tailwind's bg-gray-900 */
+            font-family: sans-serif;
+        }
+        .ReactCrop__crop-selection {
+            box-shadow: 0 0 0 9999em rgba(0, 0, 0, 0.6);
+            border: 2px solid #3b82f6; /* blue-500 */
+        }
+        .ReactCrop__drag-handle {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            width: 10px;
+            height: 10px;
+            margin-top: -5px;
+            margin-left: -5px;
+            border-radius: 50%;
+        }
+        .ReactCrop .ReactCrop__rule-of-thirds-hz::before,
+        .ReactCrop .ReactCrop__rule-of-thirds-hz::after,
+        .ReactCrop .ReactCrop__rule-of-thirds-vt::before,
+        .ReactCrop .ReactCrop__rule-of-thirds-vt::after {
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-image-crop": "https://esm.sh/react-image-crop@^11.0.10"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
